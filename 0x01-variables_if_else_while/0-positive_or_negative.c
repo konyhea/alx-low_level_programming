@@ -4,7 +4,12 @@
 
 /* more headers goes there */
 
-/* betty style doc for function main goes there */
+/**
+ * main - assign a random number and display
+ *
+ * Return: Always (Success)
+ */
+
 int main(void)
 {
 	int n;
