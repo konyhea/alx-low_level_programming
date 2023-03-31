@@ -9,21 +9,14 @@
 
 void print_number(int n)
 {
-	int divisor = 1;
-	int num = n;
-
 	if (n < 0)
 	{
-	_putchar('-');
-	num = -num;
+		_putchar('-');
+		n = -n;
 	}
-
-	while (num / divisor > 9)
-		divisor *= 10;
-	while (divisor != 0)
+	if (n / 10)
 	{
-		_putchar('0' + num / divisor);
-		num %= divisor;
-		divisor /= 10;
+	print_number(n / 10);
 	}
+	_putchar(n % 10 + '0');
 }
