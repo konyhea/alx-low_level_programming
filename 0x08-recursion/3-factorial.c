@@ -19,7 +19,7 @@ int factorial(int n)
 	}
 	else
 	{
-	_putchar(n * factorial(n - 1));
+	n * factorial(n - 1);
 		}
 		return (0);
 }
