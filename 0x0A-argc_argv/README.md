@@ -1,0 +1,1 @@
+understanding the argc and agrv[] scope for this projects. we both understand argc is for counting the arguments and argv[] is a pointer to a pointer (**) that points to this arguments it haas a char data type and argc has an int
