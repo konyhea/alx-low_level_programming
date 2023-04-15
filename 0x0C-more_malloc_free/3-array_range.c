@@ -6,7 +6,7 @@
  * @min: the values of min in array
  * @max: the values of max in array
  *
- * Returm: Always Success
+ * Return: pointer to the new arrat
  */
 
 int *array_range(int min, int max)

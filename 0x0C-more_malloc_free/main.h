@@ -13,4 +13,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
 
 int _putchar(char c);
 
+char *_memset(char *s, char b, unsigned int n);
+
+
 #endif
