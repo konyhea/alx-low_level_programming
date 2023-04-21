@@ -5,9 +5,10 @@
 /**
  * print_numbers - function that prints number followed by new line
  * @separator: string to be printed between numbers
- * @n: bumber of integers passed to the funnction
+ * @n: bumber of integers passed to the funnctin
+ * @...: variable of indefinite number as argument
  *
- * Return: Always Success 0
+ * Return: ...
  */
 
 void print_numbers(const char *separator, const unsigned int n, ...)
@@ -21,12 +22,12 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	for (i = 0; i < n; i++)
 	{
 		num = va_arg(args, int);
-		printf("%d ", num);
+		printf("%d", num);
 
 		if (separator != NULL && i < n - 1)
 		printf("%s", separator);
 	}
 
-	va_end(args);
 	putchar('\n');
+	va_end(args);
 }
