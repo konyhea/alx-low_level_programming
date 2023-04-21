@@ -5,6 +5,7 @@
  * print_all - function that prints anything
  * @format: is a list of typrs of arguments passed to the function
  */
+
 void print_all(const char * const format, ...)
 {
 	va_list args;
@@ -22,28 +23,29 @@ void print_all(const char * const format, ...)
 		switch (c)
 		{
 			case 'c':
-			printf(("%c", va_arg(args, int);
-			break;
-
-			case 'i':
 			printf("%c", va_arg(args, int));
 			break;
 
+			case 'i':
+			printf("%d", va_arg(args, int));
+			break;
+
 			case 'f':
-			printf("%f", va_arg(args, doule));
+			printf("%f", va_arg(args, double));
+			break;
+
 			case 's':
 			str = va_arg(args, char *);
-
 			if (str)
 			printf("%s", str);
 			else
 			printf("(nil)");
 			break;
-		}
-		if ((c == 'c' || c == 'i' || c == 'f' || c == 's') && foormat[i + 1])
+			}
+		if ((c == 'c' || c == 'i' || c == 'f' || c == 's') && format[i + 1])
 		printf(" , ");
 		i++;
 	}
-		printf("\n");
 		va_end(args);
+		printf("\n");
 }
