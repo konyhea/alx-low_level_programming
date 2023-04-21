@@ -5,14 +5,13 @@
  * struct op - a new data type struct op
  * @op: mathematical operator
  * @f: the operation
- *
  */
 
 typedef struct op
 {
 	char *op;
-	int(*f)(int a, int b);
-}op_t;
+	int (*f)(int a, int b);
+} op_t;
 
 int op_add(int a, int b);
 
