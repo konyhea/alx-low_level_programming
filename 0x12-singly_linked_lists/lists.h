@@ -1,6 +1,7 @@
 #ifndef __LISTS__H
 #define __LISTS__H
 
+#include <stddef.h>
 
 /* struct declaration */
 
