@@ -2,6 +2,13 @@
 #include <stdlib.h>
 #include "lists.h"
 
+/**
+ * add_node - adds a new node to the end of a linked list
+ * @head: a double pointer to the list
+ * @str: to loop through the new node
+ *
+ * Return: address of the new element
+ */
 list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *new_node;
