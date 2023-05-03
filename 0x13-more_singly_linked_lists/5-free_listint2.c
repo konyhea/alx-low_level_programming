@@ -12,7 +12,7 @@ void free_listint2(listint_t **head)
 	listint_t *curr, *prev;
 
 	curr = *head;
-	
+
 	if (head == NULL)
 		return;
 
