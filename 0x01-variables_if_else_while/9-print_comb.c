@@ -8,15 +8,18 @@
 
 int main(void)
 {
-	int i;
+	int i = 48;
 
-	for (i = '0'; i < '10'; i++)
-	if(i > '0')
+	while(i <= 57)
 	{
-	putchar(',');
-	putchar(' ');
+		putchar(i);
+		if(i != 57)
+		{
+			putchar(',');
+			putchar(' ');
+		}
+		i++;
 	}
-	putchar('\n');
 
 	return (0);
 }
