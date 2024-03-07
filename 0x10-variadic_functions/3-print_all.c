@@ -46,7 +46,7 @@ void print_all(const char * const format, ...)
 			break;
 			}
 		if ((c == 'c' || c == 'i' || c == 'f' || c == 's') && format[i + 1])
-		printf(" , ");
+		printf(",");
 		i++;
 	}
 		va_end(args);
