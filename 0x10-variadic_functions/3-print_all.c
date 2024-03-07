@@ -3,7 +3,6 @@
 #include <stdarg.h>
 /**
  * print_all - function that prints anything
- *
  * @format: is a list of typrs of arguments passed to the function
  */
 
@@ -26,15 +25,12 @@ void print_all(const char * const format, ...)
 			case 'c':
 			printf("%c", va_arg(args, int));
 			break;
-
 			case 'i':
 			printf("%d", va_arg(args, int));
 			break;
-
 			case 'f':
 			printf("%f", va_arg(args, double));
 			break;
-
 			case 's':
 			str = va_arg(args, char *);
 			if (str == NULL)
