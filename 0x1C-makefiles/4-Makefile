@@ -1,0 +1,26 @@
+# Variables
+CC = gcc
+SRC := main.c school.c
+OBJ := $(SRC:%.c=%.o)
+NAME = school
+RM = rm -f
+CFLAGS = -Wall -Werror -Wextra -pedantic
+
+# Rule to build the executable
+all: $(OBJ)
+        $(CC) $(CFLAGS) $(OBJ) -o $(NAME)
+
+# deletes Emac, vim and exe and objects
+clean:
+        $(RM) *~ $(NAME)
+# deletes all object files
+oclean:
+        $(RM) $(OBJ)
+# deletes emac, vim, exe
+fclean: clean oclean
+
+# force recompilation of all sources files
+re: fclean all
+
+
+.PHONY: all clean oclean fclean re
