@@ -22,5 +22,3 @@ fclean: clean oclean
 # force recompilation of all sources files
 re: fclean all
 
-
-.PHONY: all clean oclean fclean re
