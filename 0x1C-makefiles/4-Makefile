@@ -8,14 +8,14 @@ CFLAGS = -Wall -Werror -Wextra -pedantic
 
 # Rule to build the executable
 all: $(OBJ)
-        $(CC) $(CFLAGS) $(OBJ) -o $(NAME)
+	$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
 
 # deletes Emac, vim and exe and objects
 clean:
-        $(RM) *~ $(NAME)
+	$(RM) *~ $(NAME)
 # deletes all object files
 oclean:
-        $(RM) $(OBJ)
+	$(RM) $(OBJ)
 # deletes emac, vim, exe
 fclean: clean oclean
 

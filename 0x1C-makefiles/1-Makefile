@@ -4,4 +4,4 @@ SRC = main.c school.c
 
 # The rule to build the school executable
 all: $(SRC)
-        $(CC) $(SRC) -o school
+	$(CC) $(SRC) -o school
