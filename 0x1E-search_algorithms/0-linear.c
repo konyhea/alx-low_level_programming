@@ -2,7 +2,7 @@
 
 /**
  * linear_search -  return first index of element in array.
- * @array: pointer to first array.
+ * @array: pointer to first eleent  array.
  * @size: number of elements in array.
  * @value: the value to search for.
  * Return: index of the first element if found or -1
