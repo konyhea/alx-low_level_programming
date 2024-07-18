@@ -18,7 +18,7 @@ int ln_recursion(int *array, size_t size, int value, size_t index)
 	if (index == size)
 		return (-1);
 
-	printf("Value checked array[%lu] = %d\n", index, array[index]);
+	printf("Value checked array[%lu] = [%d]\n", index, array[index]);
 
 	if (array[index] == value)
 		return (index);
