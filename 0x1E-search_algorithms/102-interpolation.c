@@ -17,14 +17,14 @@ int int_recursion(int *array, size_t low, size_t high, int value)
 
 	if (pos > high)
 	{
-		printf("value checked array[%lu] is out of range\n", pos);
+		printf("Value checked array[%lu] is out of range\n", pos);
 		return (-1);
 	}
 
 	if (low > high)
 		return (-1);
 
-	printf("value checked array[%lu] = [%d]\n", pos, array[pos]);
+	printf("Value checked array[%lu] = [%d]\n", pos, array[pos]);
 
 	if (array[pos] == value)
 		return (pos);
