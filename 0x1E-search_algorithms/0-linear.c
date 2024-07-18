@@ -2,12 +2,16 @@
 
 
 /**
- * linear_recursion - recursion to find linear saerch
+ * ln_recursion - recursion to find linear saerch
  * @array: pointer to the first element in the array
- * size: the size of the array
+ * @size: the size of the array
  * @value: the value sought after
- * index: position to start traversing
+ * @index: position to start traversing
+ *
+ *
+ * Return: index if value found or - 1 if array is Null/.
  */
+
 
 int ln_recursion(int *array, size_t size, int value, size_t index)
 {
