@@ -42,7 +42,7 @@ int jump_recursion(int *array, size_t size, size_t step, size_t idx, int value)
 
 	if (((idx + step < size) && array[idx + step] < value))
 		return (jump_recursion(array, size, step, idx + step, value));
-	printf("value found between inddexes [%lu] and [%lu]\n", idx, (idx + step));
+	printf("value found between indexes [%lu] and [%lu]\n", idx, (idx + step));
 	return (helper(array, size, idx + step, idx, value));
 }
 
